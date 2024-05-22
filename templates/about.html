@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block title %} 
+About Us
+<style>
+    
+    .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;}
+    .image {
+        float: right; 
+        margin-left: 20px; 
+    }
+    .right {
+        float: right;
+        width: 300px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+    }
+    .text {
+        text-align: left; 
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{% load static %}
+ <h1 class="text-center"  style= "color:black">About Us</h1>
+ <hr>
+
+ <h1 class="text-center"  style= "color:green">LIFE MULTISPECIALITY HOSPITAL</h1>
+ <h2 class="text-center" style= "color:green">A Hope To Life</h2>
+ <hr>
+    <div  class="clearfix">
+        <img class="image" src="{% static '/images/about1.jpg'%}" style="float:right;width:400px;height:300px">
+    
+        <div class="text">
+            <p>Welcome to our new website. We encourage you to find out more about the values and vision that guides us, the services and programs we offer, the indicators that ensure our continued accountability and transparency, and the news and events that matter most to you. It is the place where you will be able to access general healthcare information to keep you well informed.</p>
+
+            <p> Multispeciality Hospital has a proud tradition of care. For Last so many years, Life Multispeciality Hospital has cared for the people of India, surrounding communities, and beyond, being a significant player within the State. Residing in the heart of a beautiful country, we offer healthcare not only to our community residents but to the many visitors who frequent our beautiful area year round.</p>
+        </div>
+    </div>
+
+
+{% endblock %}

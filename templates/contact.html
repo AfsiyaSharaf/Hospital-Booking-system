@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+
+{% block title %}  
+Contact Us
+<style>
+    .content-box {
+       border: 1px solid #ccc;
+       padding: 20px;
+       margin-bottom: 20px;
+     }
+     
+     .number-box {
+       background-color: #e6f7ff;
+     }
+     
+     .email-box {
+       background-color: #fff3e0;
+     }
+     
+     .location-box {
+       background-color: #ffcdd2;
+     }
+</style>
+{% endblock %}
+
+{% block content %}
+
+ <h1 class ="text-center">Contact Us</h1>
+ <hr>
+  <div class="content-box number-box p-3 my-3">
+    <h2>Phone Numbers</h2>
+    <p>+91 4568787879, +91 4351334155</p>
+  </div>
+  
+  
+  <div class="content-box email-box p-3 my-3">
+    <h2>Email address</h2>
+    <p>cityhospital322@gmail.com, contactcityhospital@yahoo.com</p>
+  </div>
+  
+  
+  <div class="content-box location-box p-3 my-3">
+    <h2>Our Location</h2>
+    <p>CH-246, ABCD Building, Near xyz Corporation, New Delhi, India</p>
+  </div>
+
+  
+
+{% endblock %}
